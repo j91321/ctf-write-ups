@@ -56,12 +56,12 @@ falcon:.MTZpW8TC8tqs:32766:31:Prof. Steven &:/usr/games:/usr/games/wargames
 hunter:IE4EHKRqf6Wvo:32765:31:Hunter Hedges:/usr/guest/hunter:/bin/sh
 ```
 
-Here I have noticed first interesting account `falcon`. I noticed that the user does have a strange home directory 
-`/usr/games` and shell assigned `/usr/games/wargames`. Now I have checked the home folders of other users in 
-`/usr/guest`. One of them did stand out. I couldn't access the home folder of user hunter. 
+Here I noticed first interesting account `falcon`. I also have noticed that the user does have a strange home directory 
+`/usr/games` and shell assigned `/usr/games/wargames`. I continued with checking the home folders of other users in 
+`/usr/guest`. One of them did stand out. I couldn't access the home folder of user `hunter`. 
 
-Now I have tried to crack the passwords using `john`. Most of the passwords were cracked immediately. Hunter is the one
-I was mostly interested in. After some time the password is cracked: ***msfhack***. Now I can escalate to hunter using
+I tried to crack the passwords using `john`. Most of the passwords were cracked immediately. Hunter is the one
+I was mostly interested in. After some time the password was cracked: ***msfhack***. So I can escalate to hunter using
 ```
 su hunter
 Password:msfhack
@@ -300,7 +300,7 @@ password it looks strangely familiar. (Looks at the sticky note) God damnit! (Co
 
 I had the password the whole time! If I had gone through with my original plan it would have worked!
 
-Anyway to give you some context about what the password means an here is part of chapter 2:
+Anyway to give you some context about what the password means here is part of chapter 2:
 
 ```
 OK, how do you become privileged? The obvious way is to log onto our computer
@@ -317,7 +317,7 @@ Now I have decrypted the flag and exfiltrated it using `uuencode`
 By the way the official hint for this challenge that was released was [Xyzzy](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure#Xyzzy)
 This was big hint still some people struggled with it and asked me for advice.
 
-## 3. Lessons learned.
+## 3. Lessons learned
 
 I think I was about 4th person to get the flag (team name bc). I have spent way too much time on this, most of the CTF really.
 I have still managed to get to 18th place overall. 
